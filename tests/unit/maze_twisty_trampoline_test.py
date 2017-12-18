@@ -6,7 +6,7 @@ part_one_test_cases = [{'input': './inputs/maze_twisty_trampoline/test1.txt', 'o
                        {'input': './inputs/maze_twisty_trampoline/test2.txt', 'output': 351282}]
 
 part_two_test_cases = [{'input': './inputs/maze_twisty_trampoline/test1.txt', 'output': 10},
-                       {'input': './inputs/maze_twisty_trampoline/test2.txt', 'output': 277}]
+                       {'input': './inputs/maze_twisty_trampoline/test2.txt', 'output': 24568703}]
 
 
 class TestMazeTwistyTrampoline(unittest.TestCase):

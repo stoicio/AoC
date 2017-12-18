@@ -4,7 +4,7 @@ from solutions import memory_reallocation as mr
 
 part_one_test_cases = [{'input': [0, 2, 7, 0], 'output': (5, 4)},
                        {'input': [11, 11, 13, 7, 0, 15, 5, 5, 4, 4, 1, 1, 7, 1, 15, 11],
-                        'output': 4074}]
+                        'output': (4074, 2793)}]
 
 
 class TestMemoryAllocation(unittest.TestCase):

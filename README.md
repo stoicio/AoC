@@ -8,3 +8,4 @@ Solutions to the challenges in [Advent of Code](http://adventofcode.com/2017/abo
 - [x] Day 4 - [High-Entropy Passphrases](http://adventofcode.com/2017/day/4)
 - [x] Day 5 - [A Maze of Twisty Trampolines, All Alike](http://adventofcode.com/2017/day/5)
 - [x] Day 6 - [Memory Reallocation](http://adventofcode.com/2017/day/6)
+- [x] Day 7 - [Recursive Circus](http://adventofcode.com/2017/day/7)

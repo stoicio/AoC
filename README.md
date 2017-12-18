@@ -9,3 +9,4 @@ Solutions to the challenges in [Advent of Code](http://adventofcode.com/2017/abo
 - [x] Day 5 - [A Maze of Twisty Trampolines, All Alike](http://adventofcode.com/2017/day/5)
 - [x] Day 6 - [Memory Reallocation](http://adventofcode.com/2017/day/6)
 - [x] Day 7 - [Recursive Circus](http://adventofcode.com/2017/day/7)
+- [x] Day 8 - [I heard you like registers](http://adventofcode.com/2017/day/8)

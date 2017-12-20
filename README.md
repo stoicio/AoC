@@ -10,3 +10,7 @@ Solutions to the challenges in [Advent of Code](http://adventofcode.com/2017/abo
 - [x] Day 6 - [Memory Reallocation](http://adventofcode.com/2017/day/6)
 - [x] Day 7 - [Recursive Circus](http://adventofcode.com/2017/day/7)
 - [x] Day 8 - [I heard you like registers](http://adventofcode.com/2017/day/8)
+- [ ] Day 9 - [Stream Processing](http://adventofcode.com/2017/day/9)
+- [ ] Day 10 - [Knot Hash](http://adventofcode.com/2017/day/10)
+- [x] Day 11 - [Hex Grid](http://adventofcode.com/2017/day/11)
+    - References - [Link1](http://keekerdc.com/2011/03/hexagon-grids-coordinate-systems-and-distance-calculations/) & [Link2](https://www.redblobgames.com/grids/hexagons/)

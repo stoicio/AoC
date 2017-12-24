@@ -15,3 +15,5 @@ Solutions to the challenges in [Advent of Code](http://adventofcode.com/2017/abo
 - [x] Day 11 - [Hex Grid](http://adventofcode.com/2017/day/11)
     - References - [Link1](http://keekerdc.com/2011/03/hexagon-grids-coordinate-systems-and-distance-calculations/) & [Link2](https://www.redblobgames.com/grids/hexagons/)
 - [x] Day 12 - [Digital Plumber](http://adventofcode.com/2017/day/12)
+- [x] Day 13 - [Packer Scanners](http://adventofcode.com/2017/day/13)
+- [x] Day 14 - [Disk Defragmentation](http://adventofcode.com/2017/day/14)

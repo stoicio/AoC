@@ -17,3 +17,4 @@ Solutions to the challenges in [Advent of Code](http://adventofcode.com/2017/abo
 - [x] Day 12 - [Digital Plumber](http://adventofcode.com/2017/day/12)
 - [x] Day 13 - [Packer Scanners](http://adventofcode.com/2017/day/13)
 - [x] Day 14 - [Disk Defragmentation](http://adventofcode.com/2017/day/14)
+- [ ] Day 15 - [Duelling Generators](http://adventofcode.com/2017/day/15)

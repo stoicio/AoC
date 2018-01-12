@@ -31,4 +31,49 @@ class Particle(object):
         return pos + vel + acc
 
     def next_tick(self):
-        self.pos
+        # Update Velocity
+        x = self.vel.x + self.acc.x
+        y = self.vel.y + self.acc.y
+        z = self.vel.z + self.acc.z
+        self.vel = self.vel._replace(x=x, y=y, z=z)
+
+        # Update Position
+        x = self.pos.x + self.vel.x
+        y = self.pos.y + self.vel.y
+        z = self.pos.z + self.vel.z
+        self.pos = self.pos._replace(x=x, y=y, z=z)
+
+    def get_distance_from_origin(self):
+        return abs(self.pos.x) + abs(self.pos.y) + abs(self.pos.z)
+
+
+def get_all_particles(input_file_path):
+    particles = []
+    with open(input_file_path) as input_file:
+        for line in input_file:
+            if line.strip():
+                particles.append(Particle(line.strip()))
+    return particles
+
+
+def solve_part_one(input_file_path):
+    particles = get_all_particles(input_file_path)
+    min_particle = 0
+    for _ in range(1000):
+        min_dist = 1000000
+        min_particle = 0
+        for idx, particle in enumerate(particles):
+            particle.next_tick()
+            # if idx == 20 or idx == 40:
+            #     print particle
+            curr_dist = particle.get_distance_from_origin()
+            if curr_dist < min_dist:
+                # print 'Setting current dist', curr_dist
+                min_dist = curr_dist
+                min_particle = idx
+
+    return min_particle
+
+
+if __name__ == '__main__':
+    solve_part_one('./inputs/particle_swarm/test1.txt')

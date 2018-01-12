@@ -22,3 +22,4 @@ Solutions to the challenges in [Advent of Code](http://adventofcode.com/2017/abo
 - [x] Day 17 - [Spinlock](http://adventofcode.com/2017/day/17)
 - [x] Day 18 - [Duet](http://adventofcode.com/2017/day/18)
 - [x] Day 19 - [Series of Tubes](http://adventofcode.com/2017/day/19)
+- [ ] Day 20 - [Particle Swarm](http://adventofcode.com/2017/day/20)

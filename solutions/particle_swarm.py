@@ -1,4 +1,4 @@
-from collections import namedtuple
+from collections import defaultdict, namedtuple
 import re
 
 Vector = namedtuple('Vector', ['x', 'y', 'z'])
@@ -46,6 +46,9 @@ class Particle(object):
     def get_distance_from_origin(self):
         return abs(self.pos.x) + abs(self.pos.y) + abs(self.pos.z)
 
+    def get_position_hash(self):
+        return hash((self.pos.x, self.pos.y, self.pos.z))
+
 
 def get_all_particles(input_file_path):
     particles = []
@@ -75,5 +78,25 @@ def solve_part_one(input_file_path):
     return min_particle
 
 
+def solve_part_two(input_file_path):
+    particles = get_all_particles(input_file_path)
+
+    for _ in range(1000):
+        seen_positions = defaultdict(list)
+        items_to_remove = []
+        for idx, particle in enumerate(particles):
+            particle.next_tick()
+            curr_hash = particle.get_position_hash()
+            seen_positions[curr_hash].append(idx)
+
+        for key, items in seen_positions.items():
+            if len(items) > 1:
+                items_to_remove.extend(items)
+
+        particles = [item for idx, item in enumerate(particles) if idx not in items_to_remove]
+    return len(particles)
+
+
 if __name__ == '__main__':
     solve_part_one('./inputs/particle_swarm/test1.txt')
+    solve_part_two('./inputs/particle_swarm/test1.txt')

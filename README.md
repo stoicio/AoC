@@ -24,4 +24,4 @@ Solutions to the challenges in [Advent of Code](http://adventofcode.com/2017/abo
 - [x] Day 19 - [Series of Tubes](http://adventofcode.com/2017/day/19)
 - [x] Day 20 - [Particle Swarm](http://adventofcode.com/2017/day/20)
 - [ ] Day 21 - [Fractal Art](http://adventofcode.com/2017/day/21)
-- [ ] Day 22 - [Sporofica Virus](http://adventofcode.com/2017/day/22)
+- [x] Day 22 - [Sporofica Virus](http://adventofcode.com/2017/day/22)

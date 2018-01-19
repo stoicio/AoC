@@ -1,4 +1,5 @@
 from collections import defaultdict
+import math
 
 
 def get_input(file_path):
@@ -51,6 +52,13 @@ def solve_part_one(file_path):
     return mul_count
 
 
+def is_prime(number):
+    for i in range(2, int(math.sqrt(number))):
+        if number % i == 0:
+            return False
+    return True
+
+
 def solve_part_two(file_path):
     input_data = get_input(file_path)
     curr_instr_idx = 0
@@ -78,7 +86,7 @@ def solve_part_two(file_path):
               'd =', registers['d'], 'e =', registers['e'], 'f =', registers['f'], \
               'g =', registers['g'], 'h =', registers['h']
         count += 1
-        if count > 20:
+        if count > 20000:
             break
     # b and c are constant after first few iterations
     # the assembly code when written down, just counts composite numbers
@@ -91,5 +99,4 @@ def solve_part_two(file_path):
             if i % j == 0:
                 composite_numbers += 1
                 break
-
     return composite_numbers
